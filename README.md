@@ -48,14 +48,30 @@ cd stroy-db-module1
 
 ### 2. Собрать JAR со всеми зависимостями
 
-```bash
-mvn clean package -q
+Maven Wrapper уже включён в проект — **устанавливать Maven отдельно не нужно**.
+
+**Windows (PowerShell / cmd):**
+```bat
+.\mvnw.cmd clean package -q
 ```
+
+**Linux / macOS:**
+```bash
+./mvnw clean package -q
+```
+
+> Если Maven всё же установлен глобально, можно использовать `mvn clean package -q`.
 
 После сборки в каталоге `target/` появится файл `stroy-db-module1-1.0-SNAPSHOT-jar-with-dependencies.jar`.
 
 ### 3. Запустить приложение
 
+**Windows:**
+```bat
+java -jar target\stroy-db-module1-1.0-SNAPSHOT-jar-with-dependencies.jar
+```
+
+**Linux / macOS:**
 ```bash
 java -jar target/stroy-db-module1-1.0-SNAPSHOT-jar-with-dependencies.jar
 ```
