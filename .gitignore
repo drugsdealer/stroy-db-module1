@@ -1,0 +1,5 @@
+target/
+*.db
+images/
+picture.png
+*.class
